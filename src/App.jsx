@@ -46,7 +46,7 @@ const Navigation = ({ isOpen, toggle }) => {
           {/* Logo */}
           <a href="/" className="transition-all duration-300 hover:opacity-80">
             <img
-              src="src/assets/CookieMenacepng.png"
+              src="https://cookiemenace.s3.us-east-2.amazonaws.com/CookieMenacepng.png"
               alt="Cookie Menace"
               className="h-22 w-auto"
             />
@@ -249,7 +249,7 @@ const Story = () => (
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:translate-y-[-4px]">
                 <h3 className="text-lg sm:text-xl font-semibold text-[#b18563] mb-4">
-                  Our Beginning
+                  Ourr Beginning
                 </h3>
                 <p className="text-base sm:text-lg text-[#b18563]/80 leading-relaxed">
                   Cookie Menace started in our home kitchen with a simple
@@ -317,10 +317,22 @@ const Story = () => (
 
 const Gallery = () => {
   const images = [
-    { alt: "Chocolate Chip Cookies", src: "src/assets/cookie1.jpeg" },
-    { alt: "Double Chocolate Cookies", src: "src/assets/cookie2.jpeg" },
-    { alt: "Oatmeal Raisin Cookies", src: "src/assets/cookie3.jpeg" },
-    { alt: "Sugar Cookies", src: "src/assets/cookie1.jpeg" },
+    {
+      alt: "Chocolate Chip Cookies",
+      src: "https://cookiemenace.s3.us-east-2.amazonaws.com/cookie1.jpeg",
+    },
+    {
+      alt: "Double Chocolate Cookies",
+      src: "https://cookiemenace.s3.us-east-2.amazonaws.com/cookie2.jpeg",
+    },
+    {
+      alt: "Oatmeal Raisin Cookies",
+      src: "https://cookiemenace.s3.us-east-2.amazonaws.com/cookie3.jpeg",
+    },
+    {
+      alt: "Sugar Cookies",
+      src: "https://cookiemenace.s3.us-east-2.amazonaws.com/cookie2.jpeg",
+    },
   ];
 
   const scrollRef = useRef(null);
