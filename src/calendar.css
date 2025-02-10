@@ -1,0 +1,77 @@
+/* Custom calendar styles */
+.react-calendar {
+	width: 100%;
+	background-color: white;
+	font-family: inherit;
+	line-height: 1.125em;
+	border: none !important;
+	padding: 1rem;
+}
+
+.react-calendar button {
+	color: #b18563;
+	padding: 8px !important;
+	font-size: 0.95em;
+}
+
+/* Override weekend color to match other days */
+.react-calendar__month-view__days__day--weekend {
+	color: #dac2a4;
+}
+
+.react-calendar__tile:disabled {
+	background-color: white;
+	cursor: default;
+}
+
+.react-calendar__tile--now {
+	background: #faf7f0 !important;
+}
+
+.react-calendar__navigation button:disabled {
+	background-color: transparent;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+	background: #faf7f0;
+}
+
+/* Delivery date highlighting */
+.delivery-date {
+	position: relative;
+	font-weight: bold !important;
+	background: #b18563 !important;
+	color: white !important; /* Keep delivery date text white */
+}
+
+.delivery-date::after {
+	content: '';
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* Remove default borders */
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+	border: 0 !important;
+}
+
+/* Add some spacing between days */
+.react-calendar__month-view__days__day {
+	margin: 2px;
+}
+
+/* Adjust the month and year display */
+.react-calendar__navigation__label__labelText {
+	color: #b18563;
+	font-weight: bold;
+}

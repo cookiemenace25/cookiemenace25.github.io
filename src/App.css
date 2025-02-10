@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Custom calendar styles */
+.react-calendar {
+  width: 100%;
+  background-color: white;
+  font-family: inherit;
+  line-height: 1.125em;
+}
+
+.react-calendar button {
+  color: #b18563;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #dac2a4;
+}
+
+.react-calendar__tile:disabled {
+  background-color: white;
+  cursor: default;
+}
+
+.react-calendar__tile--now {
+  background: #faf7f0;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: transparent;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #faf7f0;
+}
